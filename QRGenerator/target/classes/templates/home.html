@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<title>Keep</title>
+<link rel="stylesheet" type="text/css" href="/css/ff.css" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+	integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+	crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+	integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+	crossorigin="anonymous" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+	integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+	integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+	crossorigin="anonymous"></script>
+
+
+</head>
+<body id="body">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-lg-6 div1 ">
+				<img th:src="pet2.jpg" class="img-fluid " alt="Responsive image">
+				<div class="div2">
+					<h1 class="top-left display-2 text-left h11">
+						<kbd class="shadow-lg  mb-5 bg-warning rounded">Keep</kbd>
+						an 
+						<kbd class="shadow-lg  mb-5 bg-warning rounded">
+							<i class="eye icon"></i>
+						</kbd>
+					</h1>
+					<h1 class="display-2 text-right h11" >
+						<font color="white">on</font> <font color="Yellow">your</font>
+						<br><kbd class="shadow-lg  mb-5  rounded">pet</kbd>
+					</h1>
+				</div> 
+			</div>
+			<div class="col-12 col-lg-6 div3 ">
+
+				 <br> <br> <br><br> <br> <br> <br><br> <br> <br> <br><br> <br><br> <br> <br> <br>
+
+				
+
+				
+								<div class="container-fluid d-flex justify-content-center">
+									<form action="/QRcode" method="post"
+										enctype="multipart/form-data" class="formm " >
+										<div class="form-group row ">
+											<div class="col-12 col-lg-6 div4 ">
+												<input required="required" type="text" name="PName"
+													class="form-control shadow-lg  rounded"
+													placeholder="Pet's Name">
+											</div>
+
+											<div class="col-12 col-lg-6  ">
+												<input required="required" type="text" name="PKind"
+													class="form-control shadow-lg  rounded"
+													placeholder="Pet's Kind">
+											</div>
+										</div>
+										<div class="form-group row  ">
+											<div class="col-12 col-md-6 div4  ">
+												<input required="required" type="text" name="OName"
+													class="form-control shadow-lg  rounded"
+													placeholder="Owner's Name">
+											</div>
+
+											<div class="col-12 col-md-6   ">
+												<input required="required" type="text" name="OAddress"
+													class="form-control shadow-lg  rounded"
+													placeholder="Owner's Address">
+											</div>
+										</div>
+										<div class="form-group row  ">
+											<div class="col-12 col-md-6 div4  " >
+												<input required="required" type="text" name="OPhone"
+													class="form-control shadow-lg  rounded"
+													placeholder="Owner's Phone">
+											</div>
+											<div class="col-12 col-md-6 " >
+												<input required="required" type="email" name="OEmail"
+													class="form-control shadow-lg  rounded"
+													placeholder="Owner's email">
+											</div>
+										</div>
+
+										<div class="form-group row ">
+											<div class=" col-12 col-md-12  ">
+												<button
+													class="negative btn-default fluid ui submit form-control-lg button shadow-lg  rounded"
+													type="submit">
+													<i class="download icon"></i>Generate QR
+												</button>
+											</div>
+										</div>
+									</form>
+
+
+								</div>
+							
+
+				<br>
+
+
+			</div>
+
+
+		</div>
+		<div class="row">
+			<div class="col-12 col-lg-12 ">
+				<div class="footer text-muted bg-dark foote">
+					<kbd>Developed by Abdelali Nassri
+					@2020</kbd>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>

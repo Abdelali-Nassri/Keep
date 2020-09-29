@@ -1,0 +1,38 @@
+
+.div1{
+	position: relative; text-align: center; color: white;
+}
+.div2{
+	position: absolute; top: 10px; left: 40px;right:40px
+}
+.div3{
+	background-image: url('../dd.png');background-repeat: no-repeat;
+	background-position: top ;
+	
+}
+
+
+.div4{
+	margin-bottom: 12px;
+}
+.foote{
+	display: flex; justify-content: center;
+}
+.cont{
+	align-items:center;
+}
+.formm{
+	width: 75%;
+	align-content: center;
+	
+}
+
+@media (max-width : 500px){
+		
+	.h11{
+		size: 30px;
+		}
+	}
+}
+
+
